@@ -25,7 +25,7 @@ export const skills = [
       ids: "03",
       title: "Java",
       foto_name: java,
-      quote: "Application Development"
+      quote: "Software Developer"
     },
     {
       ids: "04",
@@ -55,12 +55,12 @@ export const skills = [
         ids: "08",
         title: "Figma",
         foto_name: figma,
-        quote: "Project Management"
+        quote: "UI Design Prototyping"
     },
     {
         ids: "09",
         title: "Wordpress",
         foto_name: wordpress,
-        quote: "Project Management"
+        quote: "Web Development"
     }
   ]

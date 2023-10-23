@@ -14,7 +14,7 @@ const Contact = () => {
                         <div className="flex flex-col items-center justify-center border-2 rounded-[12px] w-[250px] mb-[20px] pt-[30px] pb-[30px] pl-[20px] pr-[20px]">
                             <img src="src/assets/email.png" alt="Email" />
                             Email
-                            <p>user@gmail.com</p>
+                            <p className='text-[12px] mt-2 text-textColor'>user@gmail.com</p>
                             <div className='box-services'>
                                 <p>view more</p>
                                 <img src="src\assets\scroll_kekanan.png" alt="" />
@@ -23,7 +23,7 @@ const Contact = () => {
                         <div className="flex flex-col items-center justify-center border-2 rounded-[12px] w-[250px] mb-[20px] pt-[30px] pb-[30px] pl-[20px] pr-[20px]">
                             <img src="src/assets/whatsapp.png" alt="Whatsapp" />
                             Whatsapp
-                            <p>+91 12356897</p>
+                            <p className='text-[12px] mt-2 text-textColor'>+91 12356897</p>
                             <div className='box-services'>
                                 <p>view more</p>
                                 <img src="src\assets\scroll_kekanan.png" alt="" />
@@ -32,7 +32,7 @@ const Contact = () => {
                         <div className="flex flex-col items-center justify-center border-2 rounded-[12px] w-[250px] mb-[20px] pt-[30px] pb-[30px] pl-[20px] pr-[20px]">
                             <img src="src/assets/mesengger.png" alt="Mesengger" />
                             Mesengger
-                            <p>user.fb123</p>
+                            <p className='text-[12px] mt-2 text-textColor'>user.fb123</p>
                             <div className='box-services'>
                                 <p>view more</p>
                                 <img src="src\assets\scroll_kekanan.png" alt="" />

@@ -9,20 +9,7 @@ function App() {
 
       <Layout />
 
-    
-      
-    
-   
-
-   
-
-      {/* Testimonials Section */}
-      {/* <div className="judul">
-          <h1> Testimonials</h1>
-          <p>My Clients</p> 
-      </div>
-      <section>
-      </section> */}
+  
     </>
   )
 }

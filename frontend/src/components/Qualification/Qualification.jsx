@@ -1,9 +1,16 @@
 import React from 'react'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { MdOutlineWork } from 'react-icons/md';
+import { IoMdSchool } from 'react-icons/io';
+
+
 
 const Qualification = () => {
   return (
     <section>
       <div className="container">
+
         <div className='flex items-center justify-center'>
           <img src="src/assets/qualifications/edu.png" alt="Edu" />
           <p className='font-[800]'>Education</p>
@@ -11,35 +18,95 @@ const Qualification = () => {
           <p className='font-[800]'>Experience</p>
         </div>
 
-        <div className='flex flex-row items-center justify-evenly mt-[40px]'>
-          <div className='Edu flex flex-column items-start'>
-            <div className=' border-2 rounded-[20px] p-[30px] flex flex-col'>
-              <h3 className='font-[800] text-[25px]'>Web Designs</h3>
-              <p className='text-[16px]'> India - Institute </p>
-              <p className='flex text-[12px] text-gray-500'> <img className='mr-[10px]' src="src\assets\date.png" alt="date" /> 2023 - Presents</p>
-            </div>
-            <div className='border-2 rounded-[20px] p-[30px] flex flex-col mt-[390px] border-1'>
-              <h3 className='font-[800] text-[25px]'>Web Developer</h3>
-              <p className='text-[16px]'>India - Institute </p>
-              <p className='flex text-[12px] text-gray-500'> <img className='mr-[10px]' src="src\assets\date.png" alt="date" />  2017 - 2023</p>
-            </div>
-          </div>
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="2011 - present"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<MdOutlineWork />}
+          >
+            <h3 className="vertical-timeline-element-title">Web Designs</h3>
+            <h4 className="vertical-timeline-element-subtitle">India, institute</h4>
+            <p>
+              Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2010 - 2011"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<MdOutlineWork />}
+          >
+            <h3 className="vertical-timeline-element-title">Art Director</h3>
+            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+            <p>
+              Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2008 - 2010"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<MdOutlineWork />}
+          >
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+            <p>
+              User Experience, Visual Design
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2006 - 2008"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<MdOutlineWork />}
+          >
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+            <p>
+              User Experience, Visual Design
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="April 2013"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={<IoMdSchool />}
+          >
+            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
+            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+            <p>
+              Strategy, Social Media
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="November 2012"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={<IoMdSchool />}
+          >
+            <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
+            <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+            <p>
+              Creative Direction, User Experience, Visual Design
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={<IoMdSchool />}
+          >
+            <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+            <p>
+              Creative Direction, Visual Design
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
 
-          <div className="vertical-line"></div>
-
-          <div className='Exp flex flex-column items-start'>
-            <div className='border-2 rounded-[20px] p-[30px] flex flex-col'>
-                <h3 className='font-[800] text-[25px]'>Art Designs</h3>
-                <p className='text-[16px]'>India - Institute </p>
-                <p  className='flex text-[12px] text-gray-500'> <img className='mr-[10px]' src="src\assets\date.png" alt="date" />  2023 - Presents</p>
-              </div>
-              <div className='border-2 rounded-[20px] p-[30px] mt-[390px] flex flex-col'>
-                <h3 className='font-[800] text-[25px]'>Web Developer</h3>
-                <p className='text-[16px]'>India - Institute </p>
-                <p  className='flex text-[12px] text-gray-500'> <img className='mr-[10px]' src="src\assets\date.png" alt="date" />  2019 - 2022</p>
-              </div>
-            </div>
-        </div>
       </div>
     </section>
   )

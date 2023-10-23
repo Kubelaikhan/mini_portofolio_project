@@ -1,10 +1,14 @@
 import React from 'react'
 
-import { skills } from './../../assets/data/skills';
+
 import SkillsCard from './SkillsCard';
+
+import useFetch from './../../hooks/useFetch.js';
+import { BASE_URL } from './../../utils/config.js';
 
 const Skills = () => {
 
+  const {data: getAllSkills} = useFetch(`${BASE_URL}/`)
 
   return (
     <section>
@@ -18,7 +22,7 @@ const Skills = () => {
         lg:mt-[55px]
         '>
 
-          { skills.map((item, index)=> (
+          { getAllSkills.map((item, index)=> (
           <SkillsCard item={item} index={index} key={index}/>
           ))} 
         </div>

@@ -17,6 +17,13 @@ body{
   background-color: #000; /* Ganti dengan warna yang Anda inginkan */
 }
 
+.vertical-comment {
+  width: 20px;
+  height: 80px; /* Sesuaikan tinggi garis sesuai kebutuhan */
+  background-color: #ff6600; /* Ganti dengan warna yang Anda inginkan */
+}
+
+
 .sticky_header{
   width: 100%;
   height: 80px;
@@ -30,7 +37,7 @@ body{
 }
 
 .comment {
-  max-height: 50px; /* Atur tinggi maksimum awal */
+  max-height: 150px; /* Atur tinggi maksimum awal */
   overflow: hidden;
   position: relative;
 }
